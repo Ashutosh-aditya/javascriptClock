@@ -15,7 +15,7 @@
     background-color: black;
     color: white;
     font-family: "Orbitron", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.8);
     margin-top: 10%;
     
@@ -24,4 +24,11 @@
 body{
     color: white;
     background-color:azure;
+}
+
+@media screen and (max-width: 768px) {
+    .clock {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        width: 80%; /* Adjust width for smaller screens */
+    }
 }

@@ -1,5 +1,6 @@
 
 const clockBody = document.getElementById('clockBody');
+const suff = document.getElementById('suff');
 
 function updateClock(){
     const date = new Date;
@@ -16,7 +17,8 @@ function updateClock(){
     minutes=minutes<10? "0"+minutes :minutes;
     seconds=seconds<10? "0"+seconds :seconds;
 
-    clockBody.innerHTML=hour+":"+minutes+":"+seconds+" "+suffix;
+    clockBody.innerHTML=hour+":"+minutes+":"+seconds+" ";
+    suff.innerHTML=suffix;
     
 }
 
